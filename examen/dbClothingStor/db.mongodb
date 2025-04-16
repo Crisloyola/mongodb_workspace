@@ -1,0 +1,53 @@
+use ("dbClothingStor")
+db.createCollection("prendas")
+
+db.prendas.insertMany([
+    {
+        nombre:"Camisa Formal",
+        marca:"H & M",
+        categorias:[
+            "Ropa Formal", "Camisas", "Hombres"
+        ],
+        Stock: 50,
+        PrecioUni: 35.50
+    },
+    {
+        nombre:"Pantalones Jeans",
+        marca:"Levi's",
+        categorias:[
+            "Ropa Casual", "Pantalones", "Unisex"
+        ],
+        Stock: 100,
+        PrecioUni: 45.00
+    },
+    {
+        nombre:"Vestido de Verano",
+        marca:"Zara",
+        categorias:[
+            "Ropa Casual", "Vestidos", "Mujeres"
+        ],
+        Stock: 30,
+        PrecioUni: 29.99
+    },
+    {
+        nombre:"Chompa de Lana",
+        marca:"Uniqlo",
+        categorias:[
+            "Ropa de Invierno", "Chompas", "Unisex", "Mujeres"
+        ],
+        Stock: 75,
+        PrecioUni: 89.99
+    },
+    {
+        nombre:"Casaca de Cuero",
+        marca:"Gucci",
+        categorias:[
+            "Ropa de Invierno", "Unisex"
+        ],
+        Stock: 20,
+        PrecioUni: 299.99
+    }
+])
+
+
+db.prendas.find().pretty()

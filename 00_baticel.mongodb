@@ -12,3 +12,4 @@ db.producto.insertOne(
 )
 //Lista el documento
 db.producto.find();
+
